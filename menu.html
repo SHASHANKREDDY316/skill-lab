@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BILL</title>
+</head>
+<body>
+    <h1 style="text-align: center;">SELECT YOUR DISH</h1>
+    <center>
+    <table border="3">
+        <tr>
+            <th>DISH</th>
+            <th>PRICE</th>
+        </tr>
+        <tr><td>IDLY</td><td>20</td></tr>
+        <tr><td>Dosa</td><td>40</td></tr>
+        <tr><td>uggani</td><td>30</td></tr>
+        <tr><td>pongal</td><td>40</td></tr>
+        <tr><td>poori</td><td>50</td></tr>
+        <tr><td>vada</td><td>20</td></tr>
+    </table>
+    <br>
+    
+    <form onsubmit="return false;">
+        <label for="idli">Idli</label>
+        <input type="number" id="idli" min="0">
+        <br>
+        <label for="dosa">Dosa</label>
+        <input type="number" id="dosa" min="0">
+        <br>
+        <label for="uggani">Uggani</label>
+        <input type="number" id="uggani" min="0">
+        <br>
+        <label for="pongal">Pongal</label>
+        <input type="number" id="pongal" min="0">
+        <br>
+        <label for="poori">Poori</label>
+        <input type="number" id="poori" min="0">
+        <br>
+        <label for="vada">Vada</label>
+        <input type="number" id="vada" min="0">
+        <br><br>
+        <button type="button" onclick="bill()">Order</button>
+        <p id="res"></p>
+    </form>
+    </center>
+
+    <script src="menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+div {
+    background-color:bisque;
+    width: 20%;
+    border-radius: 20px;
+
+}
+body {
+    background-image: url(marks.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}

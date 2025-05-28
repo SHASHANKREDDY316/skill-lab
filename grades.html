@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="result.css">
+    <title>Love </title>
+</head>
+<body><h1>Result Predictor</h1>
+    <label for=""><b> Your Name</b></label>
+    <input type="text" id="uname" placeholder="Enter your name">
+    <button onclick="Result()"> MAKE Result</button>
+    <p id="res"></p>
+    <script>
+        function Result() {
+            var uname = document.getElementById('uname').value;
+          
+
+            var per =Math.random() * 100;
+            var res = document.getElementById("res");
+            if(per>90&&per<=100) {
+             res.innerHTML = "<h2>Congratulations,You are pass with outstanding</h2>";
+            } else if(per>80&&per<=90) {
+             res.innerHTML = "<h2>Congratulations,You are pass with distinction</h2>";
+            } else if(per>70&&per<=80) {
+             res.innerHTML = "<h2>Congratulations,You are pass with first class</h2>";
+            } else if(per>60&&per<=70) {
+             res.innerHTML = "<h2>Congratulations,You are pass with second class</h2>";
+            } else if(per>50&&per<=60) {
+                res.innerHTML = "<h2>Congratulations,You are pass with third class</h2>";
+            } else if(per>40&&per<=50) {
+                res.innerHTML = "<h2>Congratulations,You are pass with average</h2>";
+            } else if(per>30&&per<=40) {
+                res.innerHTML = "<h2>Congratulations,You are pass with below average</h2>";
+            } else if(per>20&&per<=30) {
+                res.innerHTML = "<h2>Congratulations,You are pass with poor</h2>";
+            } else {
+             res.innerHTML = "<h2>Not pass.you are fail😂😂😂😂.</h2>";
+            }
+            res.innerHTML += "<h2>Your score is " + per.toFixed(2) + "%</h2>";
+
+            }
+    </script>
+</body>
+</html>

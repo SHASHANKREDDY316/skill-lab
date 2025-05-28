@@ -1,0 +1,66 @@
+body {
+    color: aqua;
+}
+#one {
+    height: 50px;
+    width: 50px;
+    background-color: pink;
+    border: 5px solid green;
+    margin: 5px;
+    padding: 5px;
+    border-bottom-left-radius: 45%;
+    border-top-right-radius: 45%;
+}
+#two {
+    height: 50px;
+    width: 50px;
+    background-color: pink;
+    border: 5px solid red;
+    margin: 5px;
+    padding: 5px;
+    border-top-left-radius: 45%;
+    border-bottom-right-radius: 45%;
+}
+#three {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(0, 255, 21);
+    border: 5px dashed red;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 50%;
+}
+#one:hover {
+    background-color:red;
+    box-shadow: 10px 10px 15px rgb(240, 239, 239);
+    border: 10px double grey;
+}
+#two:hover {
+    background-color: yellow;
+    box-shadow: 10px 10px 15px rgb(240, 239, 239);
+    border: 10px double grey;
+}
+#three:hover {
+    background-color: green;
+    box-shadow: 10px 10px 15px rgb(240, 239, 239);
+    border: 10px double grey;
+}
+h1:hover {
+    text-transform: uppercase;
+    color:black;
+    text-shadow: 10px 1px 10px black;
+    text-decoration: line-through wheat;
+
+}
+body {
+    backdrop-filter: blur(3px);
+}
+#main {
+    justify-items: center;
+    height: 250px;
+    width: 100px;
+    background-color: brown;
+    border-radius: 10px;
+    padding: 10px;
+}
+
